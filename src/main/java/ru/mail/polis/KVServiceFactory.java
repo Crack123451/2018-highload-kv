@@ -56,7 +56,7 @@ final class KVServiceFactory {
         if (port <= 0 || 65536 <= port) {
             throw new IllegalArgumentException("Port out of range");
         }
-        
+
         return new KVServiceM(port, dao);
     }
 }
